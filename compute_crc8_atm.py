@@ -10,5 +10,5 @@ def compute_crc8_atm(datagram, initial_value=0):
                crc = (crc << 1) ^ 0x07 & 0xFF
             else:
                crc = (crc << 1) & 0x0FF
-    #crc &= 0xFF
+    crc &= 0xFF
     return crc
